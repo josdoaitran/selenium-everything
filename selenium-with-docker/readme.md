@@ -29,13 +29,13 @@ We should consider selenium 3 with
 ```
 
 # Selenium Docker image and start container:
-- Run local:
+- Run local with selenium standardlone
 ```agsl
 //Selenium image and run container in stardalone
-docker run --rm -it -p 4441:4444 -p 7901:7900 --shm-size 2g seleniarm/standalone-chromium:latest
-docker run --rm -it -p 4442:4444 -p 7902:7900 --shm-size 2g seleniarm/standalone-firefox:latest
+docker run --rm -it -p 4441:4444 -p 7901:7900 --shm-size 2g selenium/standalone-chromium:latest
+docker run --rm -it -p 4442:4444 -p 7902:7900 --shm-size 2g selenium/standalone-firefox:latest
 ```
-- or Build in Docker compose file: 
+- or Build in Docker compose file (Docker Selenium standalone)
 ```agsl
 version: "3.8"
 
@@ -61,6 +61,8 @@ services:
       - "7902:7900"
 ```
 - Password to access VNC: `secret` access via this port: 7901
+- Docker run with selenium-hub:
+Refer to this link to get docker container: [Link](https://hub.docker.com/u/selenium)
 
 Note: 
 - https://medium.com/@ahamedabdulrahman/dockerize-selenium-java-project-and-run-selenium-scripts-within-docker-container-c2603d1bac3f
