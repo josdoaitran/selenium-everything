@@ -2,6 +2,7 @@
 We collect all information about Selenium here.
 
 ### - Selenium 3 and older vs Selenium 4:
+Here is the document to collect steps to compare Selenium 3 and Selenium 4: [Link](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/)
 
 ### - Topic: Upload files in Selenium: 
 Refer to: [here](https://github.com/josdoaitran/upload-webDriver-tutorial)
