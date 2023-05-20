@@ -1,5 +1,7 @@
 # selenium-tutorial-everything
 We collect all information about Selenium here.
+### DevTools In Selenium 4:
+https://applitools.com/blog/selenium-4-chrome-devtools/
 
 ### - Selenium 3 and older vs Selenium 4:
 Here is the documents to collect steps to compare Selenium 3 and Selenium 4: 
