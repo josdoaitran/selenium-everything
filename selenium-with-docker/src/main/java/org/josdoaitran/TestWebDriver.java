@@ -10,17 +10,18 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class TestRemote {
+public class TestWebDriver {
     @Test
     public void TestRemoteExample() throws MalformedURLException {
+//        https://www.selenium.dev/blog/2022/using-java11-httpclient/
         System.setProperty("webdriver.http.factory", "jdk-http-client");
         ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--headless=new");
         chromeOptions.addArguments("--no-sandbox");
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4441"), chromeOptions);
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
-//        driver.quit();
+        driver.close();
+        driver.quit();
     }
 
     @Test
@@ -28,5 +29,19 @@ public class TestRemote {
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
+        driver.close();
+    }
+
+    @Test
+    public void TestHeadlessBrowser(){
+        ChromeOptions chromeOptions = new ChromeOptions();
+//        https://www.selenium.dev/blog/2023/headless-is-going-away/
+//        Headless in newest chrome version - version 109 and older
+//        Headless in older version:   chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--headless=new");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://google.com");
+        System.out.println(driver.getTitle());
+        driver.close();
     }
 }
