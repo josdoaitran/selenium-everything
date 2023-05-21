@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  chrome:
+    image: selenium/standalone-chrome:latest
+    container_name: chrome
+    volumes:
+      - '/dev/shm:/dev/shm'
+    shm_size: '2gb'
+    ports:
+      - "4444:4444"
+      - "7901:7900"
+
+#  firefox:
+#    image: selenium/standalone-firefox:latest
+#    container_name: firefox
+#    volumes:
+#      - '/dev/shm:/dev/shm'
+#    shm_size: '2gb'
+#    ports:
+#      - "4442:4444"
+#      - "7902:7900"
+  test:
+    build: .
+    container_name: test-docker-local
+    depends_on:
+      - chrome
