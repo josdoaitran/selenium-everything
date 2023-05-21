@@ -1,0 +1,1 @@
+java -cp selenium-with-docker-1.0.jar:selenium-with-docker-1.0-tests.jar:libs/* org.testng.TestNG runner.xml

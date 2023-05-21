@@ -1,0 +1,17 @@
+FROM openjdk:11
+
+WORKDIR /usr/share/tag
+ADD  target/libs libs
+ADD  target/selenium-with-docker-1.0.jar selenium-with-docker-1.0.jar
+ADD  target/selenium-with-docker-1.0-tests.jar selenium-with-docker-1.0-tests.jar
+ADD  src/main/resources src/main/resources
+
+ADD  src/main/ src/main/
+ADD  test.xml test.xml
+#ADD  target/test-classes target/test-classes
+ADD  target/classes target/classes
+
+#ADD entrypoint.sh entrypoint.sh
+#RUN chmod +x entrypoint.sh
+#ENTRYPOINT ["/bin/sh", "-c", "/usr/share/tag/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "-c", "java -cp selenium-with-docker-1.0.jar:selenium-with-docker-1.0-tests.jar:libs/* org.testng.TestNG test.xml"]

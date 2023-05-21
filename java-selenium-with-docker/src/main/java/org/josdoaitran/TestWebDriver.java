@@ -17,7 +17,7 @@ public class TestWebDriver {
         System.setProperty("webdriver.http.factory", "jdk-http-client");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox");
-        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4441"), chromeOptions);
+        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
         driver.get("https://google.com");
         System.out.println(driver.getTitle());
         driver.close();
