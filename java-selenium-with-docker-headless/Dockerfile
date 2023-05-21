@@ -1,10 +1,10 @@
-FROM openjdk:11
+FROM chrome-driver-maven-jdk-11
 
 WORKDIR /usr/share/tag
 ADD  target/libs libs
 ADD  target/selenium-with-docker-1.0.jar selenium-with-docker-1.0.jar
 ADD  target/selenium-with-docker-1.0-tests.jar selenium-with-docker-1.0-tests.jar
-ADD  src/main/resources src/main/resources
+#ADD  src/main/resources src/main/resources
 
 ADD  src/main/ src/main/
 ADD  test.xml test.xml
