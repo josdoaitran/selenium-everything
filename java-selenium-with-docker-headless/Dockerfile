@@ -1,4 +1,4 @@
-FROM chrome-driver-maven-jdk-11
+FROM josdoaitran/chrome-driver-maven-jdk-11
 
 WORKDIR /usr/share/tag
 ADD  target/libs libs
