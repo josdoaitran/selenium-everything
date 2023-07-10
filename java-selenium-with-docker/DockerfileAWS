@@ -1,0 +1,16 @@
+FROM python:3.8-alpine3.18
+
+#install curl and jq
+RUN apk update && apk add curl jq
+
+#copy the entrypoint script
+COPY ecs_entry_point.sh /opt/bin/entry_point.sh
+RUN chmod +x /opt/bin/entry_point.sh
+
+FROM selenium/standalone-chrome:latest
+#execute the entrypoint script
+CMD ["/opt/bin/entry_point.sh"]
+
+#expose the ports
+EXPOSE 4444:4444
+EXPOSE 7900:7900
