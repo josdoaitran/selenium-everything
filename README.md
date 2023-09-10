@@ -16,7 +16,12 @@ Using Java 11+ HTTP Client in Selenium 4.5.0 and beyond: [Link](https://www.sele
 Refer to: [here](https://github.com/josdoaitran/upload-webDriver-tutorial)
 
 ### - Topic: Selenium with Docker
+- Solution 1: We the selenium with Selenium Node / Selenium Grid
 Refer to: [here](selenium-with-docker/readme.md)
+- Solution 2: We run our Selenium browser with Headless browser:
+Refer to https://www.selenium.dev/blog/2023/headless-is-going-away/
++ Headless in newest chrome version - version 109 and older
++ Headless in older version:   `chromeOptions.addArguments("--headless");`
 
 # Note: 
 - Headlless Browser: https://www.selenium.dev/blog/2023/headless-is-going-away/
