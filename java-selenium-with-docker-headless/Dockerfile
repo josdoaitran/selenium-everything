@@ -1,4 +1,4 @@
-FROM josdoaitran/chrome-driver-maven-jdk-11
+FROM selenium/standalone-chrome:latest
 
 WORKDIR /usr/share/tag
 ADD  target/libs libs
