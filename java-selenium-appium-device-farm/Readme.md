@@ -98,3 +98,5 @@ Build and package your tests by run this comment:
 - AWS Device Farm: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-appium.html
 - AWS Device Farm permission: https://docs.aws.amazon.com/devicefarm/latest/developerguide/security_iam_service-with-iam.html
 - Java Appium - Device Farm Example: https://github.com/aws-samples/aws-device-farm-appium-tests-for-sample-app
+- Aws-device-farm-appium-cucumber-tests-for-sample-app: https://github.com/aws-samples/aws-device-farm-appium-cucumber-tests-for-sample-app
+- Device Farm example - Calabash test: https://github.com/aws-samples/aws-device-farm-sample-app-for-ios
