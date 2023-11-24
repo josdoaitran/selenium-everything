@@ -57,6 +57,43 @@ Assure your project is setup correct build plugin configuration:
     </build>
 ```
 
+# Update Assembly to zip configuration:
+Create the zip.xml file on `src/main/assembly/zip.xml`.
+
+```agsl
+<assembly
+    xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+  <id>zip</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>${project.build.directory}</directory>
+      <outputDirectory>./</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}</directory>
+      <outputDirectory>./</outputDirectory>
+      <includes>
+        <include>/dependency-jars/</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>
+```
+
+# Build package our testing:
+Build and package your tests by run this comment:
+`$ mvn clean package -DskipTests=true`
+
+
 # References:
 - AWS Device Farm: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-appium.html
 - AWS Device Farm permission: https://docs.aws.amazon.com/devicefarm/latest/developerguide/security_iam_service-with-iam.html
