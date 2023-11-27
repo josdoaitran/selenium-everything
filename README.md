@@ -23,6 +23,10 @@ Refer to https://www.selenium.dev/blog/2023/headless-is-going-away/
 + Headless in newest chrome version - version 109 and older
 + Headless in older version:   `chromeOptions.addArguments("--headless");`
 
+### - Topic Selenium with Appium and AWS Device Farm Example
+Example: [Here](./java-selenium-appium-device-farm/Readme.md)
+
 # Note: 
-- Headlless Browser: https://www.selenium.dev/blog/2023/headless-is-going-away/
+- Headless Browser: https://www.selenium.dev/blog/2023/headless-is-going-away/
 - Reference: https://github.com/EricRicketts/UdemySeleniumWebDriverInJavaBasicsToAdvanced
+- AWS Device Farm: https://docs.aws.amazon.com/devicefarm/latest/developerguide/welcome.html
