@@ -1,5 +1,17 @@
+# AWS Device Farm Note:
+- AWS Device Farm: https://docs.aws.amazon.com/devicefarm/latest/developerguide/welcome.html
+- Device Farm is only available in the us-west-2 (Oregon) region.
+# Projects steps:
+- Build to artifacts
+- Create project
+- Create test run
+- Upload the build testing (apk, ipa files)
+- Upload testing artifacts.
+- Trigger run.
 
-#  Build plugin configuration:
+# Build the artifact for Java:
+Following these below steps:
+##  Build plugin configuration:
 Assure your project is setup correct build plugin configuration:
 
 ```agsl
@@ -57,7 +69,7 @@ Assure your project is setup correct build plugin configuration:
     </build>
 ```
 
-# Update Assembly to zip configuration:
+## Update Assembly to zip configuration:
 Create the zip.xml file on `src/main/assembly/zip.xml`.
 
 ```agsl
@@ -89,7 +101,7 @@ Create the zip.xml file on `src/main/assembly/zip.xml`.
 </assembly>
 ```
 
-# Build package our testing:
+## Build package our testing:
 Build and package your tests by run this comment:
 `$ mvn clean package -DskipTests=true`
 
