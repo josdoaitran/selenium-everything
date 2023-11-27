@@ -105,6 +105,9 @@ Create the zip.xml file on `src/main/assembly/zip.xml`.
 Build and package your tests by run this comment:
 `$ mvn clean package -DskipTests=true`
 
+# Example app - Using in this example project:
+https://github.com/saucelabs/sample-app-mobile
+
 
 # References:
 - AWS Device Farm: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-appium.html
