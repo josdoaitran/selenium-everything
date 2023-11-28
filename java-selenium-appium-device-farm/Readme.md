@@ -6,6 +6,7 @@
 - Create project
 - Create test run
 - Upload the build testing (apk, ipa files)
+or we can automate it https://docs.aws.amazon.com/devicefarm/latest/developerguide/api-ref.html
 - Upload testing artifacts.
 - Trigger run.
 
