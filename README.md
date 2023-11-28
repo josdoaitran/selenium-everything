@@ -12,6 +12,24 @@ Here is the documents to collect steps to compare Selenium 3 and Selenium 4:
 ### - Selenium 4 with Java 11 version:
 Using Java 11+ HTTP Client in Selenium 4.5.0 and beyond: [Link](https://www.selenium.dev/blog/2022/using-java11-httpclient/)
 
+
+- Implicitly Wait From older to Selenium 4:
+```
+# Older:
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+# Selenium 4
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+```
+- Explicit Wait From older to Selenium 4:
+```
+# Older:
+WebDriverWait wait = new WebDriverWait(driver,10);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".classlocator")));
+# Selenium 4
+WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".classlocator")));
+```
+
 ### - Topic: Upload files in Selenium: 
 Refer to: [here](https://github.com/josdoaitran/upload-webDriver-tutorial)
 
