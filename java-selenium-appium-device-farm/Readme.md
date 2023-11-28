@@ -115,3 +115,4 @@ https://github.com/saucelabs/sample-app-mobile
 - Java Appium - Device Farm Example: https://github.com/aws-samples/aws-device-farm-appium-tests-for-sample-app
 - Aws-device-farm-appium-cucumber-tests-for-sample-app: https://github.com/aws-samples/aws-device-farm-appium-cucumber-tests-for-sample-app
 - Device Farm example - Calabash test: https://github.com/aws-samples/aws-device-farm-sample-app-for-ios
+- Appium 1 to 2: https://appium.io/docs/en/2.1/guides/migrating-1-to-2/
