@@ -33,6 +33,9 @@ wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".classl
 ### - Topic: Upload files in Selenium: 
 Refer to: [here](https://github.com/josdoaitran/upload-webDriver-tutorial)
 
+### - Topic: Handle permission Popup Appium:
+Refer to: https://www.browserstack.com/docs/app-automate/appium/advanced-features/handle-permission-pop-ups
+
 ### - Topic: Selenium with Docker
 - Solution 1: We the selenium with Selenium Node / Selenium Grid
 Refer to: [here](selenium-with-docker/readme.md)
