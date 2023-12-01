@@ -6,6 +6,7 @@
 - Create project
 - Create test run
 - Upload the build testing (apk, ipa files)
+or we can automate it https://docs.aws.amazon.com/devicefarm/latest/developerguide/api-ref.html
 - Upload testing artifacts.
 - Trigger run.
 
@@ -116,3 +117,4 @@ https://github.com/saucelabs/sample-app-mobile
 - Aws-device-farm-appium-cucumber-tests-for-sample-app: https://github.com/aws-samples/aws-device-farm-appium-cucumber-tests-for-sample-app
 - Device Farm example - Calabash test: https://github.com/aws-samples/aws-device-farm-sample-app-for-ios
 - Appium 1 to 2: https://appium.io/docs/en/2.1/guides/migrating-1-to-2/
+- AWS Device Farm permission: https://aws.permissions.cloud/iam/devicefarm
