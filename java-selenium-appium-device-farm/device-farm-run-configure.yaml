@@ -110,7 +110,7 @@ phases:
         java -cp automation.test-2.0.jar:automation.test-2.0-tests.jar:dependency-jars/* \
         -Dcucumber.features="src/test/resources/features/" -Dcucumber.filter.tags="@TC-1" \
         -Dthreadcount=1 -Ddataproviderthreadcount=1 \
-        -Dappium.screenshots.dir=$DEVICEFARM_SCREENSHOT_PATH org.testng.TestNG runner.xml \
+        -Dappium.screenshots.dir=$DEVICEFARM_SCREENSHOT_PATH org.testng.TestNG testng.xml \
          -d $DEVICEFARM_LOG_DIR/test-output -verbose 10
 
       # Before starting tests, verify that all dependencies and configurations are in place.
