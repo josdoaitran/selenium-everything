@@ -2,9 +2,7 @@
 JavaRestAssert ExtendReport API Testing - TestNG
 ### 1. Overview
 This FW to support to Automation Testing for API.
-
 ### 2. Dependencies
-
 - RestAssert
 ```$xslt
 <dependency>
