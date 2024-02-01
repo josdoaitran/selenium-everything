@@ -1,15 +1,18 @@
 # selenium-tutorial-everything
 We collect all information about Selenium here.
-### DevTools In Selenium 4:
+### DevTools In Selenium 4
 - https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/
 - https://applitools.com/blog/selenium-4-chrome-devtools/
 
-### - Selenium 3 and older vs Selenium 4:
+### - Selenium 3 and older vs Selenium 4
 Here is the documents to collect steps to compare Selenium 3 and Selenium 4: 
 - SeleniumHQ: [Link](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/)
 - Saucelabs Documents: [Here](https://saucelabs.com/resources/blog/how-to-upgrade-to-selenium-4)
 
-### - Selenium 4 with Java 11 version:
+### - Selenium 4 with Java 11 version
+
+On Selenium HQ version 4.6: https://www.selenium.dev/blog/2022/introducing-selenium-manager/ We will have Selenium Driver Manager in Selenium Dependcies.
+
 Using Java 11+ HTTP Client in Selenium 4.5.0 and beyond: [Link](https://www.selenium.dev/blog/2022/using-java11-httpclient/)
 
 
