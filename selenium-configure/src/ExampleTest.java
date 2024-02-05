@@ -29,6 +29,10 @@ public class ExampleTest {
         String downloadFolderPath = "/path/to/download/folder";
         // Set the download directory
         options.addArguments("download.default_directory=" + downloadFolderPath);
+        options.addArguments("--disable-web-security");
+        options.addArguments("--ignore-ssl-errors=yes");
+        options.addArguments("--ignore-certificate-errors");
+
         // 2 ways to block 3rd party cookies
         // Option 1
         options.addArguments("--block-third-party-cookies");
