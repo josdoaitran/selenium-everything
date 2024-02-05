@@ -27,8 +27,11 @@ public class ExampleTest {
 
         // Specify the download folder path
         String downloadFolderPath = "/path/to/download/folder";
+
         // Set the download directory
         options.addArguments("download.default_directory=" + downloadFolderPath);
+
+        // To set disable checking web security, ssl, and certificate error on Non-Prod environment
         options.addArguments("--disable-web-security");
         options.addArguments("--ignore-ssl-errors=yes");
         options.addArguments("--ignore-certificate-errors");
@@ -38,9 +41,9 @@ public class ExampleTest {
         options.addArguments("--block-third-party-cookies");
         // Option 2
 
-//        Map<String, Object> prefs = new HashMap<>();
-//        prefs.put("profile.block_third_party_cookies", true);
-//        options.setExperimentalOption("prefs", prefs);
+/*        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("profile.block_third_party_cookies", true);
+        options.setExperimentalOption("prefs", prefs);*/
 
         driver = new ChromeDriver(options);
         driver.get("http://automationtesting.in/");
