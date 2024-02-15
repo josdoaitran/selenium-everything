@@ -1,0 +1,1 @@
+RUN influx -execute 'CREATE DATABASE automation_test'
