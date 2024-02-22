@@ -11,6 +11,8 @@ services:
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.11.1
+    depends_on:
+      - elasticsearch
     container_name: kibana
     links:
       - elasticsearch:elasticsearch
