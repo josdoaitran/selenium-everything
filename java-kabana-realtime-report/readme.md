@@ -14,3 +14,9 @@ docker run -p 9200:9200 -p 9300:9300 --name elasticsearch -e "discovery.type=sin
 ```
  docker run -p 5601:5601 --name kibana --link elasticsearch:elasticsearch docker.elastic.co/kibana/kibana:7.11.1
  ```
+![alt text](image.png)
+
+Access to Kibana: http://localhost:5601/app/home#/
+
+- Kibana authetication with SSO: https://www.elastic.co/guide/en/kibana/current/kibana-authentication.html
+- Kabana installation: https://www.elastic.co/guide/en/elasticsearch/reference/7.11/docker.html
