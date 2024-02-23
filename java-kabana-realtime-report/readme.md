@@ -21,12 +21,17 @@ Access to Kibana: http://localhost:5601/app/home#/
 - Kibana authetication with SSO: https://www.elastic.co/guide/en/kibana/current/kibana-authentication.html
 - Kabana installation: https://www.elastic.co/guide/en/elasticsearch/reference/7.11/docker.html
 
-# Setup Elasticsearch for automationt testing report dashboard
+# Setup Elasticsearch for automation testing report dashboard
 
 - Post data to elasticsearch (Push test cases results of automation test)
 - Accessing data from elasticsearch (Read and query)
 - Tool:  Chrome Extension -  Elasticsearch Head plugin: 
 https://chromewebstore.google.com/detail/multi-elasticsearch-head/cpmmilfkofbeimbmgiclohpodggeheim
+![img.png](elasticsearch-plugin.png)
+## Basic
+- Create an index
+- Get an index
+- Delete an index
 
 # References:
 - https://www.youtube.com/watch?v=hfD6otdkCTA&ab_channel=TestingMiniBytes
