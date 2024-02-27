@@ -18,7 +18,7 @@ docker run -p 9200:9200 -p 9300:9300 --name elasticsearch -e "discovery.type=sin
 
 Access to Kibana: http://localhost:5601/app/home#/
 
-- Kibana authetication with SSO: https://www.elastic.co/guide/en/kibana/current/kibana-authentication.html
+- Kibana authentication with SSO: https://www.elastic.co/guide/en/kibana/current/kibana-authentication.html
 - Kabana installation: https://www.elastic.co/guide/en/elasticsearch/reference/7.11/docker.html
 
 # Setup Elasticsearch for automation testing report dashboard
