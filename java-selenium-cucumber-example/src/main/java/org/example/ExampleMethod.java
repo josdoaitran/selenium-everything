@@ -6,7 +6,7 @@ public class ExampleMethod {
     }
 //    write an example method to concat string
     public static String concat(String a, String b){
-        return a+ " " + b;
+        return a + " " + b;
     }
 
 }

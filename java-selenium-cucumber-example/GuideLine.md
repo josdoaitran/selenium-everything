@@ -6,6 +6,12 @@ Hi all, Testing4everyone gives this note to share to you the step by step to bui
 + cucumber
 + TestNG
 
+# BDD and Cucumber
+
+- Behavior-Driven Development (BDD) is a software development process that uses human-readable statements to define processes. 
+- BDD is an evolution of the Test-Driven Development Methodology (TDD).
+- Cucumber: https://cucumber.io/
+
 # Steps
 Here is the highlight steps, you can follow and refer to recorded video on Youtube channel
 ## Create a new Java Maven project
@@ -39,5 +45,11 @@ https://mvnrepository.com/
     <artifactId>selenium-java</artifactId>
     <version>4.17.0</version>
 </dependency>
-
 ```
+
+## Create an example test cases in Cucumber
+    - Install Cucumber extension on IntelliJ:
+        + Gherkin: https://plugins.jetbrains.com/plugin/9164-gherkin
+        + Cucumber for Java: https://plugins.jetbrains.com/plugin/7212-cucumber-for-java
+    - Create an `testcase` directory on test package
+    - Create the `ExampleTestCase.feature`
